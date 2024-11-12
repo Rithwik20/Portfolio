@@ -258,6 +258,26 @@
                 padding: 8rem 4rem 0;
             }
         }
+        .bottom-left-image-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px; /* Optional padding */
+        }
+
+        .bottom-left-image-wrapper img {
+            width: 150px; /* Set desired width */
+            height: auto; /* Keep aspect ratio */
+            border-radius: 10px; /* Optional styling */
+        }
+
+        /* Ensuring the body takes full height so the image stays at the bottom */
+        body {
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            padding-bottom: 160px; /* Optional: space for footer or other bottom content */
+        }
     </style>
 </head>
 <body>
@@ -346,6 +366,9 @@
                 LinkedIn
             </a>
         </div>
+    </div>
+    <div class="bottom-left-image-wrapper">
+        <img src="r.jpg" alt="Profile Image">
     </div>
 
     <div class="background-wrapper"></div>
